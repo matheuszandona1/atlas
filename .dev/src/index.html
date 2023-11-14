@@ -71,8 +71,16 @@
 		</section>
 		<section class="benefits blue" id="revisao">
 			<div class="benefits__container">
-				<div class="benefits__side" data-aos="fade-right" data-aos-delay="300">
-					<img src="./assets/equipe-tempo.jpg" alt="" />
+				<div class="benefits__side imgs-rev" data-aos="fade-right" data-aos-delay="300">
+					<div class="container">
+						<div id="comparison">
+							<figure>
+								<div id="handle"></div>
+								<div id="divisor"></div>
+							</figure>
+							<input type="range" min="0" max="100" value="50" id="slider" oninput="moveDivisor()" />
+						</div>
+					</div>
 				</div>
 				<div class="benefits__content">
 					<div class="tag" data-aos="fade-left" data-aos-delay="300">
@@ -118,8 +126,16 @@
 
 		<section class="benefits" id="formatacao">
 			<div class="benefits__container">
-				<div class="benefits__side" data-aos="fade-right" data-aos-delay="300">
-					<img src="./assets/img.png" alt="" />
+				<div class="benefits__side imgs" data-aos="fade-right" data-aos-delay="300">
+					<div class="container">
+						<div id="comparison">
+							<figure>
+								<div id="handler"></div>
+								<div id="divider"></div>
+							</figure>
+							<input type="range" min="0" max="100" value="50" id="slide" oninput="moveDivider()" />
+						</div>
+					</div>
 				</div>
 				<div class="benefits__content">
 					<div class="tag" data-aos="fade-left" data-aos-delay="300">
@@ -223,7 +239,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="numbers">
+		<section class="numbers" id="numeros">
 			<h2 class="default__title">Atlas em números</h2>
 			<div class="resources__container">
 				<div class="resources__content">
