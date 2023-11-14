@@ -2,21 +2,28 @@
 	<div class="contact__container">
 		<h3 class="default__title">FAÇA SEU ORÇAMENTO</h3>
 
-		<form action="" class="contact__form">
+		<form action="https://api.staticforms.xyz/submit" method="post" class="contact__form">
 			<div class="form-gap">
 				<div class="input_wrap">
-					<input type="text" required />
+					<input type="text" name="name" required />
 					<label><img src="./assets/person.svg" alt="" /> Nome</label>
 				</div>
 				<div class="input_wrap">
-					<input type="email" required />
+					<input type="email" name="email" required />
 					<label><img src="./assets/mail.svg" alt="" /> E-mail</label>
 				</div>
 				<div class="input_wrap">
-					<input type="tel" required />
+					<input type="tel" name="phone" required />
 					<label><img src="./assets/phone.svg" alt="" /> Telefone</label>
 				</div>
 			</div>
+			<input
+				type="hidden"
+				name="accessKey"
+				value="5ebf72eb-b967-421f-9691-a8a46fd4ab88
+"
+			/>
+			<input type="hidden" name="redirectTo" value="https://atlas-ten-rho.vercel.app/typ.html" />
 			<button type="submit" class="button">FAÇA SEU ORÇAMENTO</button>
 		</form>
 	</div>
