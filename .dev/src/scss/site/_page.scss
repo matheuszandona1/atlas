@@ -545,6 +545,13 @@
 			box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.04);
 			@include s-border;
 			padding: 32px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			img {
+				max-width: 160px;
+				height: auto;
+			}
 		}
 	}
 }
@@ -569,6 +576,7 @@
 		}
 		.default__title {
 			margin: 24px 0px;
+			color: #fff;
 		}
 		.default__desc {
 			color: $texto-legenda;
@@ -597,6 +605,8 @@
 			@include text;
 			color: $texto-resources;
 			margin-bottom: auto;
+			max-height: 220px;
+			overflow: auto;
 		}
 	}
 }
@@ -669,7 +679,7 @@
 	padding: 80px 0px;
 	&__container {
 		@include container;
-		display: flex;
+		// display: flex;
 		justify-content: space-between;
 		align-items: center;
 		gap: 24px;
@@ -682,7 +692,12 @@
 		}
 	}
 	&__side {
-		max-width: 576px;
+		// max-width: 576px;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 48px;
 		@include media(s) {
 			display: flex;
 			justify-content: center;
@@ -692,6 +707,7 @@
 		}
 		.default__title {
 			margin: 24px 0px;
+			text-align: center;
 		}
 		.default__desc {
 			margin-bottom: 83px;
@@ -701,12 +717,23 @@
 		}
 	}
 	&__content {
-		max-width: 640px;
+		// max-width: 640px;
+		@include container;
 		width: 100%;
 		.accordion {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			gap: 40px;
+			row-gap: 24px;
 			&-item {
 				margin-bottom: 16px;
 				border: none;
+				max-width: 600px;
+				width: 100%;
+				flex-shrink: 0;
+
 				&:last-child {
 					margin-bottom: 0px;
 				}
