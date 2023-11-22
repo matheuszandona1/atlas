@@ -7,10 +7,6 @@ function moveDivisor() {
 	divisor.style.width = slider.value + "%"
 }
 
-window.onload = function () {
-	moveDivisor()
-}
-
 const divider = document.getElementById("divider"),
 	handler = document.getElementById("handler"),
 	slide = document.getElementById("slide")
@@ -21,5 +17,6 @@ function moveDivider() {
 }
 
 window.onload = function () {
+	moveDivisor()
 	moveDivider()
 }
