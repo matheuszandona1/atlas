@@ -7,5 +7,19 @@ function moveDivider(section) {
 	divisor.style.width = slide.value + "%"
 }
 
-moveDivider("1") // Inicialize para a primeira seção
-moveDivider("2") // Inicialize para a segunda seção, se necessário
+const slide1 = document.getElementById("slide1")
+const slide2 = document.getElementById("slide2")
+
+slide1.addEventListener("input", function () {
+	moveDivider("1")
+})
+
+slide2.addEventListener("input", function () {
+	moveDivider("2")
+})
+
+// Inicialize para a primeira seção
+moveDivider("1")
+
+// Inicialize para a segunda seção, se necessário
+moveDivider("2")
