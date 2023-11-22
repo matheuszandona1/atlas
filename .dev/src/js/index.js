@@ -7,7 +7,5 @@ function moveDivider(section) {
 	divisor.style.width = slide.value + "%"
 }
 
-window.onload = function () {
-	moveDivider("1") // Inicialize para a primeira seção
-	moveDivider("2") // Inicialize para a segunda seção, se necessário
-}
+moveDivider("1") // Inicialize para a primeira seção
+moveDivider("2") // Inicialize para a segunda seção, se necessário
