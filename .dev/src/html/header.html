@@ -45,5 +45,23 @@
 		<!-- <link rel="icon" href="./img/favicon.ico">
 	<link rel="icon" href="./img/favicon.svg" type="image/svg+xml"> -->
 		<!-- <link rel="apple-touch-icon" href="./img/favicon.svg"> -->
+		<script defer="">
+			document.addEventListener("DOMContentLoaded", function () {
+				function moveDivider(section) {
+					const handler = document.getElementById(`handler${section}`)
+					const slide = document.getElementById(`slide${section}`)
+					const divisor = document.getElementById(`divisor${section}`)
+
+					handler.style.left = slide.value + "%"
+					divisor.style.width = slide.value + "%"
+				}
+
+				const sliders = document.querySelectorAll('input[type="range"]')
+				sliders.forEach((slider) => {
+					const section = slider.id.replace("slide", "")
+					slider.addEventListener("input", () => moveDivider(section))
+				})
+			})
+		</script>
 	</head>
 </html>
