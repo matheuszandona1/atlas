@@ -337,3 +337,4 @@ poetry.toml
 yarn.lock
 package-lock.json
 data/data.db
+.dev/.DS_Store
