@@ -1,22 +1,13 @@
-const divisor = document.getElementById("divisor"),
-	handle = document.getElementById("handle"),
-	slider = document.getElementById("slider")
+function moveDivider(section) {
+	const handler = document.getElementById(`handler${section}`)
+	const slide = document.getElementById(`slide${section}`)
+	const divisor = document.getElementById(`divisor${section}`)
 
-function moveDivisor() {
-	handle.style.left = slider.value + "%"
-	divisor.style.width = slider.value + "%"
-}
-
-const divider = document.getElementById("divider"),
-	handler = document.getElementById("handler"),
-	slide = document.getElementById("slide")
-
-function moveDivider() {
 	handler.style.left = slide.value + "%"
-	divider.style.width = slide.value + "%"
+	divisor.style.width = slide.value + "%"
 }
 
 window.onload = function () {
-	moveDivisor()
-	moveDivider()
+	moveDivider("1") // Inicialize para a primeira seção
+	moveDivider("2") // Inicialize para a segunda seção, se necessário
 }
