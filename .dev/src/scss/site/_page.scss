@@ -143,6 +143,7 @@
 }
 .resources {
 	padding: 80px 0px;
+
 	@include media(s) {
 		padding: 60px 0px;
 	}
@@ -173,6 +174,11 @@
 		margin-bottom: 32px;
 		@include container;
 		max-width: 1040px;
+	}
+}
+#servicos {
+	.card-resources {
+		height: 380px;
 	}
 }
 .benefits {
