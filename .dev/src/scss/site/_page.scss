@@ -554,10 +554,15 @@
 			padding: 32px;
 			display: flex;
 			justify-content: center;
+			width: 100%;
 			align-items: center;
+			max-width: 224px;
+			height: 105px;
 			img {
 				max-width: 160px;
-				height: auto;
+				width: 100%;
+				object-fit: contain;
+				max-height: 70px;
 			}
 		}
 	}
